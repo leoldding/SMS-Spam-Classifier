@@ -1,2 +1,2 @@
 # SMS-Spam-Filter
-Creation of a spam filter based on SMS messages.
+Creation of a spam message classifier based on SMS messages.
