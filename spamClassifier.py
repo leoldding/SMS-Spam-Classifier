@@ -15,7 +15,7 @@ with open('data/SMSSpamCollection','r') as f:
 
 # split each line to create message type (ham 0 or spam 1) and messages
 messageType = np.array([1 if message[:4].strip() == 'spam' else 0 for message in lines])
-messages = [message[4:].strip() for message in lines]
+messages = [message[4:].strip().lower() for message in lines]
 
 # characters to remove from messages
 specialChars = '",.<>:;/()*&^%$?!'
